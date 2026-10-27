@@ -1,0 +1,122 @@
+/* ===== 1. Whole page ===== */
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Georgia, serif; background-color: #f4f6fb; color: #333333;
+line-height: 1.6;
+}
+/* ===== 2. Header and navigation ===== */ header {
+background-color: #590016;
+color: white; padding: 20px 40px; display: flex;
+justify-content: space-between; align-items: center;
+}
+
+header h1 { margin: 0;
+font-size: 26px;
+}
+
+nav ul {
+list-style: none; margin: 0;
+padding: 0; display: flex; gap: 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none; font-weight: bold;
+}
+
+nav a:hover { color: #ffd166;
+}
+/* ===== 3. Main content box ===== */ main {
+max-width: 900px; margin: 30px auto; padding: 30px; background-color: white; border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+color: #590016;
+}
+/* ===== 4. Home page intro ===== */
+.intro { display: flex;
+align-items: center; gap: 30px;
+}
+
+.intro img { width: 200px; height: 200px;
+object-fit: cover; border-radius: 50%;
+border: 5px solid #000000;
+}
+
+.button {
+display: inline-block; background-color: #590016; color: white;
+padding: 10px 20px; border-radius: 5px; text-decoration: none;
+}
+
+.button:hover {
+
+background-color: #ffd166; color: #333333;
+}
+/* ===== 5. About page ===== */
+.photo { width: 100%;
+max-width: 400px; border-radius: 10px;
+}
+
+table {
+border-collapse: collapse; width: 100%;
+}
+
+th, td {
+border: 1px solid #cccccc; padding: 10px;
+text-align: left;
+}
+
+th {
+background-color: #590016; color: white;
+}
+
+tr:nth-child(even) { background-color: #f4f6fb;
+}
+/* ===== 6. Contact form ===== */ label {
+display: block; margin-top: 15px; font-weight: bold;
+}
+
+input, select, textarea { width: 100%;
+padding: 10px;
+border: 1px solid #cccccc; border-radius: 5px;
+font-family: inherit;
+}
+
+button {
+margin-top: 20px; background-color: #590016; color: white;
+border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer;
+}
+
+button:hover {
+background-color: #ffd166; color: #333333;
+}
+/* ===== 7. Footer ===== */ footer {
+text-align: center; padding: 20px; color: #777777;
+}
+/* ===== 8. Responsive: phones and small screens ===== */ 
+
+.social-links {
+    text-align: center;
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column; padding: 20px;
+}
+
+nav ul {
+margin-top: 10px;
+}
+
+main {
+margin: 15px; padding: 20px;
+}
+
+.intro {
+flex-direction: column; text-align: center;
+}
+}
